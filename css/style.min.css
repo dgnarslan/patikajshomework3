@@ -1,0 +1,2 @@
+*{margin:0;padding:0}.container{width:100%;height:100%}.container .content{width:100%;height:100%;display:-ms-grid;display:grid;-ms-grid-columns:(1fr)[10];grid-template-columns:repeat(10, 1fr);overflow:hidden}
+/*# sourceMappingURL=style.min.css.map */
