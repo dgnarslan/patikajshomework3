@@ -2,7 +2,8 @@
 
 Bu repo [Patika.Dev](https://www.patika.dev) Front-End Eğitiminde ödev olarak yapmış olduğum Javascript 3.ödev uygulaması.
 
-![lightTheme](images/light-theme.PNG)
+![lightTheme](images/light-theme.png)
+![darkTheme](images/dark-theme.png)
 
 ## Installation
 
