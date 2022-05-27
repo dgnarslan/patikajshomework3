@@ -1,9 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap')
+
+$light: #fff
+$color: #333
+$bg-primary: #F3F4F6
+
 *
   margin: 0
   padding: 0
+  box-sizing: border-box
+  outline: none
+  border: none
+  text-decoration: none
+  list-style: none
+
+html,body
+  height: 100%
+
+body
+  font-family: 'Mulish', sans-serif
 
 .container
   width: 100%
   height: 100%
-  .content
-    height: 100%
+  display: flex
+  align-items: center
+  justify-content: baseline
+  flex-direction: column
+  background-color: $bg-primary
+  transition: 300ms all
+  &.dark-theme
+    background-color: $color
+    color: $light !important
+    .header
+      .button-box
+        .btn
+          background-color: $color
+          color: $light
+          border: 1px solid $light
+          &.active
+            color: $color
+            background-color: $light
+    .card-big-container
+      background-color: $color
+    .github-link
+      background-color: $light
+      color: $color !important
+      &::before
+        color: $color
+      a
+        color: $color
+
+  .github-link
+    position: absolute
+    top: 80px
+    right: 10px
+    width: 60px
+    height: 50px
+    border-radius: 10px
+    background-color: $color
+    transition: 300ms all
+    overflow: hidden
+    a
+      width: 0
+      height: 100%
+      transform: translateX(-300px)
+      border-radius: 10px
+      display: grid
+      place-items: center
+      color: $light
+      overflow-x: hidden
+      opacity: 0
+      transition: 600ms transform, 600ms opacity
+    &::before
+      content: '\f113'
+      font-family: 'FontAwesome'
+      display: grid
+      place-items: center
+      height: 100%
+      width: 100%
+      color: $light
+      font-size: 20px
+      position: absolute
+      transition: 300ms all
+    &:hover
+      width: 120px
+      &::before
+        opacity: 0
+      a
+        width: 100%
+        height: 100%
+        opacity: 1
+        transform: translateX(0)
+  .theme-button
+    position: absolute
+    top: 140px
+    right: 10px
+    width: 60px
+    height: 50px
+    border-radius: 10px
+    transition: 300ms all
+    background-color: $color
+    display: grid
+    place-items: center
+    color: $color
+    &::before
+      content: '\f186'
+      font-family: 'FontAwesome'
+      display: grid
+      place-items: center
+      height: 100%
+      width: 100%
+      color: $light
+      font-size: 20px
+      position: absolute
+      transition: 300ms all
+
+    &.dark-btn
+      background-color: $light
+      color: $color
+
+      &::before
+        content: '\f185'
+        font-family: 'FontAwesome'
+        color: $color
+
+  .header
+    width: 85%
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 10px 0
+    .logo
+      width: 40%
+    .button-box
+      flex: 1
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      gap: 10px
+      .btn
+        width: 110px
+        height: 100%
+        padding: 10px
+        background-color: $bg-primary
+        color: $color
+        border: 1px solid $color
+        outline: none
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 5px
+        &.active
+          color: $light
+          background-color: $color
+  .card-big-container
+    width: 100%
+    height: calc( 100% - 70px )
+    padding: 10px 0
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    background-color: $bg-primary
+    overflow: hidden
+    transition: 300ms all
+    .card-container
+      width: 85%
+      height: 100%
+      display: grid
+      grid-template-columns: repeat(3,1fr)
+      grid-gap: 40px
+      overflow: auto
+      padding: 0 10px
+      &::-webkit-scrollbar
+        width: 0
+      &::-webkit-scrollbar-track
+        background: transparent
+      &::-webkit-scrollbar-thumb
+        background: transparent
+      &::-webkit-scrollbar-thumb:hover
+        background: transparent
+
+      .card-box
+        width: 100%
+        height: 520px
+        max-height: 720px
+        border-radius: 10px
+        overflow: hidden
+        padding: 25px
+        background-color: $light
+        justify-self: center
+        .card-header
+          width: 100%
+          height: 233px
+          overflow: hidden
+          position: relative
+          .card-img
+            width: 100%
+            height: 100%
+            border-radius: 7px
+            overflow: hidden
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 7px
+          .card-categories
+            width: 107px
+            height: 38px
+            background-color: $bg-primary
+            color: $color
+            border-radius: 5px
+            display: flex
+            align-items: center
+            justify-content: center
+            position: absolute
+            bottom: 10px
+            left: 10px
+            font-size: 16px
+            font-weight: bold
+        .card-body
+          height: calc( 100% - 233px )
+          display: flex
+          align-items: flex-start
+          justify-content: flex-start
+          flex-direction: column
+          padding-top: 25px
+          .card-txt
+            width: 100%
+            height: calc( 100% - 25px )
+            line-height: 1.6
+            font-size: 16px
+            color: $color
+            h4
+              font-size: 24px
+              height: 40px
+              margin-bottom: 10px
+
+@import responsive

@@ -1,0 +1,116 @@
+@media screen and (max-width:1680px)
+  .container
+    .github-link
+      width: 60px
+      a
+        width: 100%
+        transform: translateX(0)
+        text-indent: 99999999px
+      &:hover
+        width: 60px
+        &::before
+          opacity: 1
+      a
+        width: 60px
+
+@media screen and (max-width:1280px)
+  .container
+    .github-link,.theme-button
+      right: 5px
+      width: 50px
+    .github-link
+      a
+        width: 100%
+        transform: translateX(0)
+        text-indent: 99999999px
+      &:hover
+        width: 50px
+        &::before
+          opacity: 1
+      a
+        width: 100%
+
+    .header
+      width: 90%
+      padding-left: 20px
+
+    .card-big-container
+      .card-container
+        width: 90%
+        grid-template-columns: repeat(3, 1fr)
+        padding: 10px 20px
+
+@media screen and (max-width:980px)
+  .container
+    .header
+      width: 90%
+    .card-big-container
+      .card-container
+        width: 90%
+        grid-template-columns: repeat(2, 1fr)
+
+@media screen and (max-width:860px)
+  .container
+    .github-link
+      top: 10px
+      right: 10px
+    .theme-button
+      top: 70px
+      right: 10px
+    .header
+      width: 100%
+      flex-direction: column
+      height: 120px
+      align-items: center
+      justify-content: center
+      .logo
+        width: 100%
+        display: grid
+        place-items: center
+      .button-box
+        width: 100%
+        justify-content: center
+        .btn
+          height: 40px
+    .card-big-container
+      .card-container
+        width: 90%
+        grid-template-columns: repeat(2, 1fr)
+
+@media screen and (max-width:680px)
+  .container
+    .github-link
+      top: 140px
+      right: 10px
+    .theme-button
+      top: 200px
+      right: 10px
+    .card-big-container
+      .card-container
+        width: 80%
+        grid-template-columns: repeat(1, 1fr)
+
+@media screen and (max-width:500px)
+  .container
+    .github-link
+      top: 7px
+      right: 20px
+    .theme-button
+      top: 7px
+      left: 40px
+    .header
+      height: 190px
+      padding: 0
+      .logo
+        padding-top: 7px
+      .button-box
+        width: 100%
+        flex-wrap: wrap
+        gap: 10px
+        padding-top: 20px
+        .btn
+          width: calc( 100% / 2 - 20px)
+    .card-big-container
+      .card-container
+        padding: 10px 0
+        width: 95%

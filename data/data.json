@@ -1,0 +1,69 @@
+{
+  "cardContent": [
+    {
+      "id": 1,
+      "title": "Technology Title",
+      "category": "Technology",
+      "img": "images/tech-1.jpg",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolore sapiente, tempore animi soluta laborum voluptatibus dolorem voluptas reprehenderit cumque.",
+      "date": "2019-01-01"
+    },
+    {
+      "id": 2,
+      "title": "Animals Title",
+      "category": "Animals",
+      "img": "images/animals-1.jpg",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolore sapiente, tempore animi soluta laborum voluptatibus dolorem voluptas reprehenderit cumque.",
+      "date": "Category 3"
+    },
+    {
+      "id": 3,
+      "title": "Books Title",
+      "category": "Books",
+      "img": "images/books-1.jpg",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolore sapiente, tempore animi soluta laborum voluptatibus dolorem voluptas reprehenderit cumque."
+    },
+    {
+      "id": 4,
+      "title": "Books Title",
+      "category": "Books",
+      "img": "images/books-2.jpg",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolore sapiente, tempore animi soluta laborum voluptatibus dolorem voluptas reprehenderit cumque."
+    },
+    {
+      "id": 5,
+      "title": "Technology Title",
+      "category": "Technology",
+      "img": "images/tech-2.jpg",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolore sapiente, tempore animi soluta laborum voluptatibus dolorem voluptas reprehenderit cumque."
+    },
+    {
+      "id": 6,
+      "title": "Animals Title",
+      "category": "Animals",
+      "img": "images/animals-2.jpeg",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolore sapiente, tempore animi soluta laborum voluptatibus dolorem voluptas reprehenderit cumque."
+    },
+    {
+      "id": 7,
+      "title": "Technology Title",
+      "category": "Technology",
+      "img": "images/tech-3.jpg",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolore sapiente, tempore animi soluta laborum voluptatibus dolorem voluptas reprehenderit cumque."
+    },
+    {
+      "id": 8,
+      "title": "Animals Title",
+      "category": "Animals",
+      "img": "images/animals-3.jpg",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolore sapiente, tempore animi soluta laborum voluptatibus dolorem voluptas reprehenderit cumque."
+    },
+    {
+      "id": 9,
+      "title": "Books Title",
+      "category": "Books",
+      "img": "images/books-3.jpg",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolore sapiente, tempore animi soluta laborum voluptatibus dolorem voluptas reprehenderit cumque."
+    }
+  ]
+}
